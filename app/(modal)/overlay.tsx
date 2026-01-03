@@ -1,5 +1,6 @@
+import Entypo from "@expo/vector-icons/Entypo";
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 
 const Overlay = () => {
   return (
@@ -11,7 +12,7 @@ const Overlay = () => {
         backgroundColor: "black",
       }}
     >
-      <Text style={{ color: "white" }}>Overlay</Text>
+      <Entypo name="lock" size={40} color="white" />
     </View>
   );
 };
