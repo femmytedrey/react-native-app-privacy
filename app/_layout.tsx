@@ -22,6 +22,24 @@ export default function RootLayout() {
       <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
         <Stack>
           <Stack.Screen name="index" options={{ title: "Home" }} />
+          
+          <Stack.Screen
+            name="(modal)/overlay"
+            options={{
+              headerShown: false,
+              animation: "fade",
+              animationDuration: 200,
+            }}
+          />
+
+          <Stack.Screen
+            name="(modal)/lock"
+            options={{
+              headerShown: false,
+              animation: "fade",
+              animationDuration: 200,
+            }}
+          />
         </Stack>
         <StatusBar style="auto" />
       </ThemeProvider>
